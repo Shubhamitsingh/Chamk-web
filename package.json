@@ -1,7 +1,8 @@
 {
   "name": "chamak-web",
   "version": "1.0.0",
-  "description": "Chamak - The most exciting livestreaming platform",
+  "type": "module",
+  "description": "Chamakz - The most exciting livestreaming platform",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

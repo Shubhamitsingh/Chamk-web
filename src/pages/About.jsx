@@ -37,7 +37,7 @@ const About = () => {
             {/* Hero Section */}
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-gradient mb-4">
-                About Chamak
+                About Chamakz
               </h1>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Learn more about our mission, vision, and the team behind the most exciting livestreaming platform.
@@ -51,17 +51,17 @@ const About = () => {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                 <p>
-                  Chamak is a premier livestreaming platform that empowers creators to showcase their talent, 
+                  Chamakz is a premier livestreaming platform that empowers creators to showcase their talent, 
                   connect with audiences, and monetize their content. Founded with a vision to democratize content 
                   creation, we provide a platform where creativity meets opportunity.
                 </p>
                 <p>
-                  Whether you're a musician, dancer, comedian, gamer, or just love to share your life, Chamak provides 
+                  Whether you're a musician, dancer, comedian, gamer, or just love to share your life, Chamakz provides 
                   the tools and community to help you shine. Our platform is designed to be inclusive, accessible, and 
                   supportive of creators from all walks of life.
                 </p>
                 <p>
-                  We believe that everyone has a story to tell and talent to share. Chamak is here to amplify your voice 
+                  We believe that everyone has a story to tell and talent to share. Chamakz is here to amplify your voice 
                   and help you build a community of fans who appreciate your unique content.
                 </p>
               </div>
@@ -90,10 +90,10 @@ const About = () => {
               })}
             </div>
 
-            {/* Why Choose Chamak */}
+            {/* Why Choose Chamakz */}
             <div className="rounded-2xl shadow-lg p-8 md:p-12 border border-primary-100/50">
               <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">
-                Why Choose Chamak?
+                Why Choose Chamakz?
               </h2>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
@@ -128,7 +128,7 @@ const About = () => {
                   <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <strong className="text-gray-900">Growing Community:</strong> Join millions of creators and viewers 
-                    who are building meaningful connections and communities on Chamak.
+                    who are building meaningful connections and communities on Chamakz.
                   </div>
                 </li>
               </ul>

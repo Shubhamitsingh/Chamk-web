@@ -21,7 +21,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
                 <p>
-                  By accessing and using Chamak, you accept and agree to be bound by the terms and provision 
+                  By accessing and using Chamakz, you accept and agree to be bound by the terms and provision 
                   of this agreement. If you do not agree to abide by the above, please do not use this service.
                 </p>
               </section>
@@ -29,7 +29,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">2. Use License</h2>
                 <p>
-                  Permission is granted to temporarily download one copy of Chamak for personal, non-commercial 
+                  Permission is granted to temporarily download one copy of Chamakz for personal, non-commercial 
                   transitory viewing only. This is the grant of a license, not a transfer of title, and under 
                   this license you may not:
                 </p>
@@ -64,7 +64,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">5. Content Ownership</h2>
                 <p>
-                  You retain ownership of any content you create and share on Chamak. By posting content, you 
+                  You retain ownership of any content you create and share on Chamakz. By posting content, you 
                   grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and distribute 
                   your content on the platform.
                 </p>
@@ -89,7 +89,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">8. Disclaimer</h2>
                 <p>
-                  The materials on Chamak are provided on an 'as is' basis. We make no warranties, expressed or 
+                  The materials on Chamakz are provided on an 'as is' basis. We make no warranties, expressed or 
                   implied, and hereby disclaim all other warranties including, without limitation, implied warranties 
                   or conditions of merchantability, fitness for a particular purpose, or non-infringement.
                 </p>
@@ -98,9 +98,9 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">9. Limitation of Liability</h2>
                 <p>
-                  In no event shall Chamak or its suppliers be liable for any damages (including, without limitation, 
+                  In no event shall Chamakz or its suppliers be liable for any damages (including, without limitation, 
                   damages for loss of data or profit, or due to business interruption) arising out of the use or 
-                  inability to use the materials on Chamak.
+                  inability to use the materials on Chamakz.
                 </p>
               </section>
 
@@ -116,8 +116,8 @@ const Terms = () => {
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mt-8 mb-4">11. Contact Information</h2>
                 <p>
                   If you have any questions about these Terms of Service, please contact us at:{' '}
-                  <a href="mailto:legal@chamak.app" className="text-primary hover:underline">
-                    legal@chamak.app
+                  <a href="mailto:info@chamakz.app" className="text-primary hover:underline">
+                    info@chamakz.app
                   </a>
                 </p>
               </section>

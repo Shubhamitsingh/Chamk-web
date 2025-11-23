@@ -1,6 +1,6 @@
-# Chamak - Livestreaming Platform Website
+# Chamakz - Livestreaming Platform Website
 
-A modern, responsive website for Chamak - The most exciting livestreaming platform. Built with React.js, Tailwind CSS, and Framer Motion.
+A modern, responsive website for Chamakz - The most exciting livestreaming platform. Built with React.js, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -152,6 +152,6 @@ Update content in respective page components in `src/pages/`.
 
 ## License
 
-Copyright © 2024 Chamak. All rights reserved.
+Copyright © 2024 Chamakz. All rights reserved.
 
 

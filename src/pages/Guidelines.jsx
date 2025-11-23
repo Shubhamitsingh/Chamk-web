@@ -42,7 +42,7 @@ const Guidelines = () => {
                 Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                At Chamak, we're committed to creating a safe, positive, and inclusive community for all users. 
+                At Chamakz, we're committed to creating a safe, positive, and inclusive community for all users. 
                 These guidelines help ensure that everyone can enjoy our platform while respecting each other's 
                 rights and dignity.
               </p>
@@ -109,7 +109,7 @@ const Guidelines = () => {
               <section>
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">Age Restrictions</h2>
                 <p className="text-gray-700">
-                  Chamak is intended for users aged 13 and above. Users under 18 should have parental supervision. 
+                  Chamakz is intended for users aged 13 and above. Users under 18 should have parental supervision. 
                   We do not knowingly collect personal information from children under 13.
                 </p>
               </section>

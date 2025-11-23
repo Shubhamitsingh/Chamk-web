@@ -19,21 +19,18 @@ const Footer = () => {
     { text: 'Features', url: '/features' },
     { text: 'How It Works', url: '#how-it-works' },
     { text: 'Pricing', url: '#pricing' },
-    { text: 'Creators', url: '#creators' },
   ]
 
   const companyLinks = [
     { text: 'About Us', url: '/about' },
     { text: 'Careers', url: '/careers' },
     { text: 'Contact', url: '/contact' },
-    { text: 'Blog', url: '/blog' },
   ]
 
   const legalLinks = [
     { text: 'Privacy Policy', url: '/privacy-policy' },
     { text: 'Terms of Service', url: '/terms' },
     { text: 'Community Guidelines', url: '/guidelines' },
-    { text: 'FAQ', url: '/faq' },
   ]
 
   return (
@@ -43,10 +40,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xl">C</span>
-              </div>
-              <span className="text-2xl font-heading font-bold text-gray-900">Chamak</span>
+              <img 
+                src="/images/logo.png" 
+                alt="Chamakz Logo" 
+                className="h-14 w-14 object-contain"
+              />
+              <span className="text-2xl font-heading font-bold text-gray-900">Chamakz</span>
             </div>
             <p className="text-gray-700 text-base font-medium">
               The most exciting livestreaming platform. Connect, perform, earn and build your fanbase.
@@ -123,7 +122,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-700 text-base font-medium">
-            Copyright © 2024 Chamak. All rights reserved.
+            Copyright © 2024 Chamakz. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             <select className="text-gray-800 text-base px-3 py-1.5 rounded border border-gray-400 font-medium">

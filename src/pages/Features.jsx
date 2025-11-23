@@ -6,7 +6,7 @@ const Features = () => {
     {
       id: 1,
       title: 'Live Streaming',
-      description: 'Experience seamless HD quality streaming with multi-camera support and screen sharing capabilities. Our advanced streaming technology ensures minimal latency and crystal-clear video quality, so your audience never misses a moment. Whether you\'re performing live music, hosting a Q&A, or sharing your daily life, Chamak provides the perfect platform to connect with your fans in real-time.',
+      description: 'Experience seamless HD quality streaming with multi-camera support and screen sharing capabilities. Our advanced streaming technology ensures minimal latency and crystal-clear video quality, so your audience never misses a moment. Whether you\'re performing live music, hosting a Q&A, or sharing your daily life, Chamakz provides the perfect platform to connect with your fans in real-time.',
       subFeatures: ['HD Quality', 'Multi-camera support', 'Screen sharing'],
       icon: Video,
       imagePosition: 'left',
@@ -14,7 +14,7 @@ const Features = () => {
     {
       id: 2,
       title: 'Virtual Gifting & Monetization',
-      description: 'Turn your passion into profit with our comprehensive virtual gifting system. Fans can send you virtual gifts during your streams, which you can convert into real earnings. With multiple gift options ranging from hearts to premium gifts, transparent earnings tracking, and instant payouts, Chamak makes it easy for creators to monetize their content and build a sustainable income.',
+      description: 'Turn your passion into profit with our comprehensive virtual gifting system. Fans can send you virtual gifts during your streams, which you can convert into real earnings. With multiple gift options ranging from hearts to premium gifts, transparent earnings tracking, and instant payouts, Chamakz makes it easy for creators to monetize their content and build a sustainable income.',
       subFeatures: ['Multiple gift options', 'Instant payouts', 'Transparent earnings'],
       icon: DollarSign,
       imagePosition: 'right',
@@ -142,7 +142,7 @@ const Features = () => {
               Ready to Start Streaming?
             </h2>
             <p className="text-xl text-white/90">
-              Download Chamak and start your journey today
+              Download Chamakz and start your journey today
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

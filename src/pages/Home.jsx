@@ -158,7 +158,7 @@ const Home = () => {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.5 + idx * 0.1 }}
-                      className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium"
+                      className="px-4 sm:px-5 py-2 sm:py-2.5 bg-white/30 backdrop-blur-md rounded-lg text-white text-sm sm:text-base font-semibold shadow-lg"
                     >
                       {badge}
                     </motion.div>
@@ -169,12 +169,22 @@ const Home = () => {
 
             {/* Right Column - Phone Mockup */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative order-1 lg:order-2"
+              initial={{ opacity: 0, x: 100, y: -50, scale: 0.8, rotate: -10 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0, 
+                y: 0, 
+                scale: 1, 
+                rotate: 0
+              }}
+              transition={{
+                duration: 0.9,
+                delay: 0.2,
+                ease: "easeOut"
+              }}
+              className="relative order-1 lg:order-2 pt-8 sm:pt-12 md:pt-16 lg:pt-20"
             >
-                <div className="relative mx-auto max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px]">
+              <div className="relative mx-auto max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px]">
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-primary rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] blur-2xl sm:blur-3xl opacity-20 sm:opacity-30"></div>
                 
@@ -185,7 +195,7 @@ const Home = () => {
                     <div className="absolute inset-0">
                       <img 
                         src="/images/portrait-girl.png" 
-                        alt="Live Streaming on Chamak"
+                        alt="Live Streaming on Chamakz"
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           // Fallback if image doesn't exist
@@ -302,7 +312,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Chamak Section */}
+      {/* About Chamakz Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -313,12 +323,12 @@ const Home = () => {
             className="max-w-3xl mx-auto text-center space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-gradient">
-              What is Chamak?
+              What is Chamakz?
             </h2>
             <p className="text-lg text-gradient leading-relaxed">
-              Chamak is a premier livestreaming platform that empowers creators to showcase their talent, 
+              Chamakz is a premier livestreaming platform that empowers creators to showcase their talent, 
               connect with audiences, and monetize their content. Whether you're a musician, dancer, comedian, 
-              or just love to share your life, Chamak provides the tools and community to help you shine.
+              or just love to share your life, Chamakz provides the tools and community to help you shine.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
               {['Live Streaming', 'Virtual Gifting', 'Community Building', 'Real Earnings'].map((highlight, idx) => (
@@ -456,7 +466,7 @@ const Home = () => {
               Ready to Start Your Streaming Journey?
             </h2>
             <p className="text-xl text-gradient">
-              Join millions of creators and viewers on Chamak
+              Join millions of creators and viewers on Chamakz
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1493] text-white rounded-lg font-semibold hover:bg-[#E6007A] transition-all duration-300 shadow-lg">

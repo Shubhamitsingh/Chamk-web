@@ -40,11 +40,13 @@ const Header = () => {
           <div className="flex items-center space-x-4 lg:space-x-6">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-1.5">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-xl">C</span>
-            </div>
+              <img 
+                src="/images/logo.png" 
+                alt="Chamakz Logo" 
+                className="h-14 w-14 object-contain"
+              />
               <span className="text-2xl font-heading font-bold text-gradient">
-                Chamak
+                Chamakz
               </span>
             </Link>
 

@@ -14,7 +14,7 @@ const Download = () => {
             className="text-center max-w-3xl mx-auto space-y-3"
           >
             <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-2">
-              Download Chamak Today
+              Download Chamakz Today
             </h1>
             <p className="text-xl text-white/90">
               Available on Android and iOS
@@ -126,7 +126,7 @@ const Download = () => {
               {
                 step: 1,
                 title: 'Download the app',
-                description: 'Click the button above to download Chamak from your app store',
+                description: 'Click the button above to download Chamakz from your app store',
                 icon: DownloadIcon,
               },
               {
