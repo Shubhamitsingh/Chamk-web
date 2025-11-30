@@ -118,8 +118,8 @@ const Guidelines = () => {
                 <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">Contact Us</h2>
                 <p className="text-gray-700">
                   If you have questions about these guidelines or need to report a violation, please contact us at:{' '}
-                  <a href="mailto:support@chamak.app" className="text-primary hover:underline">
-                    support@chamak.app
+                  <a href="mailto:info@chamakz.app" className="text-primary hover:underline">
+                    info@chamakz.app
                   </a>
                 </p>
               </section>

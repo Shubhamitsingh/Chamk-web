@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Chamakz - The most exciting livestreaming platform",
+  "homepage": "https://chamakz.app",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -23,7 +24,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   }
 }
 

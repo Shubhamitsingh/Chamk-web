@@ -9,7 +9,7 @@ lerna-debug.log*
 
 # Dependencies
 node_modules
-dist
+# dist  # Temporarily commented for GitHub backup
 dist-ssr
 *.local
 

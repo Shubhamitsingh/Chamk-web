@@ -146,8 +146,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:support@chamak.app" className="text-primary hover:underline">
-                      support@chamak.app
+                    <a href="mailto:info@chamakz.app" className="text-primary hover:underline">
+                      info@chamakz.app
                     </a>
                   </div>
                 </div>
@@ -158,8 +158,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+911234567890" className="text-gray-700 hover:text-primary">
-                      +91 XXXXX XXXXX
+                    <a href="tel:+918073034745" className="text-gray-700 hover:text-primary">
+                      +91 80730 34745
                     </a>
                   </div>
                 </div>
@@ -171,8 +171,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
                     <p className="text-gray-700">
-                      Your office address<br />
-                      City, State, PIN Code
+                      HSR Layout<br />
+                      Bangalore, Karnataka, 560102
                     </p>
                   </div>
                 </div>
