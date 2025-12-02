@@ -2,12 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance: Font Display Swap */
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
 @layer base {
   body {
     @apply text-gray-800 font-body antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+  
+  /* Image lazy loading optimization */
+  img {
+    @apply max-w-full h-auto;
+  }
+  
+  img[loading="lazy"] {
+    content-visibility: auto;
   }
 }
 

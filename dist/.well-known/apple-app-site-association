@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAM_ID.com.chamakz.app",
+        "paths": [
+          "/download",
+          "/features",
+          "/how-it-works",
+          "/safety",
+          "/about",
+          "/contact"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAM_ID.com.chamakz.app"
+    ]
+  }
+}
+
+

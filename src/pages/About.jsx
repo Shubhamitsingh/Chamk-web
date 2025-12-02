@@ -1,7 +1,64 @@
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Users, Target, Award, Heart } from 'lucide-react'
 
 const About = () => {
+  // Ensure page scrolls to top when component mounts
+  useEffect(() => {
+    // Immediate scroll
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+    
+    // Use requestAnimationFrame for next frame
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    })
+    
+    // Additional fallbacks with increasing delays to ensure it works after animations
+    const timeout1 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 50)
+
+    const timeout2 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 100)
+
+    const timeout3 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 200)
+
+    return () => {
+      clearTimeout(timeout1)
+      clearTimeout(timeout2)
+      clearTimeout(timeout3)
+    }
+  }, [])
   const values = [
     {
       icon: Target,
@@ -139,12 +196,12 @@ const About = () => {
               <p className="text-gray-600 mb-4">
                 Have questions? We'd love to hear from you!
               </p>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block px-8 py-3 bg-gradient-primary text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

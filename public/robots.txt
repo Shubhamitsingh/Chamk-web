@@ -1,0 +1,76 @@
+# robots.txt for chamakz.app
+# Last Updated: 2024-12-19
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Allow CSS and JavaScript files for proper rendering
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jsx$
+Allow: /images/
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /node_modules/
+
+# Disallow temporary and build files
+Disallow: /*.json$
+Disallow: /dist/
+Disallow: /build/
+
+# Allow specific important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /logo.png
+
+# Crawl-delay (optional - adjust based on server capacity)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://chamakz.app/sitemap.xml
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+

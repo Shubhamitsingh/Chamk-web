@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Facebook, Instagram, Twitter } from 'lucide-react'
 import Button from '../components/Button'
@@ -10,6 +10,62 @@ const Contact = () => {
     subject: '',
     message: '',
   })
+
+  // Ensure page scrolls to top when component mounts
+  useEffect(() => {
+    // Immediate scroll
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+    
+    // Use requestAnimationFrame for next frame
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    })
+    
+    // Additional fallbacks with increasing delays to ensure it works after animations
+    const timeout1 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 50)
+
+    const timeout2 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 100)
+
+    const timeout3 = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 200)
+
+    return () => {
+      clearTimeout(timeout1)
+      clearTimeout(timeout2)
+      clearTimeout(timeout3)
+    }
+  }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -28,36 +84,18 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Contact Hero */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center max-w-3xl mx-auto space-y-6"
-          >
-            <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-4">
-              Get in Touch
-            </h1>
-            <p className="text-xl text-white/90">
-              We'd love to hear from you
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section className="py-20">
+      <section className="pt-4 pb-4 sm:pt-6 sm:pb-6">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[60%_40%] gap-12 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-[60%_40%] gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-heading font-bold mb-6">Send us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold mb-3 sm:mb-4 text-center">Send us a Message</h2>
+              <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Name <span className="text-primary">*</span>
@@ -130,16 +168,16 @@ const Contact = () => {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-8"
+              className="space-y-4 sm:space-y-6"
             >
               <div>
-                <h2 className="text-3xl font-heading font-bold mb-6">Contact Information</h2>
-                <p className="text-gray-600 mb-8">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold mb-3 sm:mb-4">Contact Information</h2>
+                <p className="text-gray-600 mb-4 sm:mb-6">
                   Have a question or need help? Reach out to us through any of these channels.
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="text-primary" size={24} />
@@ -189,9 +227,11 @@ const Contact = () => {
                       return (
                         <a
                           key={social.name}
-                          href="#"
+                          href={social.name === 'Facebook' ? 'https://facebook.com/chamakz' : social.name === 'Instagram' ? 'https://instagram.com/chamakz' : 'https://twitter.com/chamakz'}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="w-12 h-12 rounded-lg flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all"
-                          aria-label={social.name}
+                          aria-label={`Follow us on ${social.name}`}
                         >
                           <Icon size={20} />
                         </a>

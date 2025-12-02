@@ -1,0 +1,35 @@
+{
+  "imageMappings": {
+    "logo.png": {
+      "seoName": "chamakz-logo-app-icon",
+      "altText": "Chamakz live video chat and dating app logo",
+      "keywords": ["logo", "app icon", "brand"]
+    },
+    "portrait-girl.png": {
+      "seoName": "live-video-chat-interface-chamakz",
+      "altText": "People using Chamakz live video chat app for HD video calls with strangers",
+      "keywords": ["live video chat", "video call", "interface"]
+    }
+  },
+  "altTextTemplates": {
+    "logo": "Chamakz live video chat and dating app logo",
+    "screenshot": "Chamakz mobile app screenshot showing {feature} feature",
+    "feature": "{feature} feature on Chamakz live video chat platform",
+    "download": "Download Chamakz {platform} app from {store}",
+    "interface": "Chamakz {type} interface for {purpose}"
+  },
+  "compression": {
+    "targetSize": 100000,
+    "quality": 85,
+    "formats": ["webp", "jpg"],
+    "sizes": {
+      "thumbnail": { "width": 300, "height": 300 },
+      "medium": { "width": 800, "height": 800 },
+      "large": { "width": 1200, "height": 1200 }
+    }
+  }
+}
+
+
+
+

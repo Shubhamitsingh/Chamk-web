@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Twitter, Youtube, Linkedin, ArrowUp } from 'lucide-react'
+import { ArrowUp, Instagram, Twitter, Facebook, Play, Apple } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
@@ -7,18 +7,18 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const socialLinks = [
-    { icon: Facebook, name: 'Facebook', url: '#' },
-    { icon: Instagram, name: 'Instagram', url: '#' },
-    { icon: Twitter, name: 'Twitter', url: '#' },
-    { icon: Youtube, name: 'YouTube', url: '#' },
-    { icon: Linkedin, name: 'LinkedIn', url: '#' },
-  ]
+  // Force immediate scroll to top when footer link is clicked
+  const handleLinkClick = () => {
+    // Immediate scroll (not smooth) to ensure it happens before route change
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }
 
   const productLinks = [
     { text: 'Features', url: '/features' },
-    { text: 'How It Works', url: '#how-it-works' },
-    { text: 'Pricing', url: '#pricing' },
+    { text: 'How It Works', url: '/how-it-works' },
+    { text: 'Download', url: '/download' },
   ]
 
   const companyLinks = [
@@ -31,39 +31,87 @@ const Footer = () => {
     { text: 'Privacy Policy', url: '/privacy-policy' },
     { text: 'Terms of Service', url: '/terms' },
     { text: 'Community Guidelines', url: '/guidelines' },
+    { text: 'Safety', url: '/safety' },
   ]
 
   return (
-    <footer className="bg-white text-gray-800">
+    <footer className="bg-white text-gray-800" role="contentinfo">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+          <div className="space-y-3">
+            <div className="flex items-center space-x-1.5">
               <img 
                 src="/images/logo.png" 
-                alt="Chamakz Logo" 
+                alt="Chamakz live video chat and dating app logo" 
                 className="h-14 w-14 object-contain"
+                loading="lazy"
               />
               <span className="text-2xl font-heading font-bold text-gray-900">Chamakz</span>
             </div>
             <p className="text-gray-700 text-base font-medium">
               The most exciting livestreaming platform. Connect, perform, earn and build your fanbase.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon
-                return (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-gradient-primary transition-colors"
-                    aria-label={social.name}
-                  >
-                    <Icon size={18} />
-                  </a>
-                )
-              })}
+            <div className="pt-4">
+              <h3 className="text-gray-900 font-bold mb-3 text-base">Follow Us</h3>
+              <div className="flex gap-3">
+                <a
+                  href="https://facebook.com/chamakz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all bg-gradient-primary/10 text-primary"
+                  aria-label="Follow us on Facebook"
+                >
+                  <Facebook size={20} />
+                </a>
+                <a
+                  href="https://instagram.com/chamakz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all bg-gradient-primary/10 text-primary"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="https://twitter.com/chamakz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all bg-gradient-primary/10 text-primary"
+                  aria-label="Follow us on Twitter"
+                >
+                  <Twitter size={20} />
+                </a>
+              </div>
+            </div>
+            <div className="pt-6">
+              <h3 className="text-gray-900 font-bold mb-3 text-base">Download App</h3>
+              <div className="flex flex-col gap-2">
+                {/* TODO: Replace with actual App Store URL when available */}
+                {/* Example: href="https://apps.apple.com/app/chamakz/id[APP_ID]" */}
+                <a
+                  href="https://apps.apple.com/app/chamakz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors text-sm font-medium"
+                  aria-label="Download from App Store"
+                >
+                  <Apple size={16} />
+                  App Store
+                </a>
+                {/* TODO: Replace with actual Google Play Store URL when available */}
+                {/* Example: href="https://play.google.com/store/apps/details?id=com.chamakz.app" */}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.chamakz.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0175C2] text-white rounded-lg hover:bg-[#0165A3] transition-colors text-sm font-medium"
+                  aria-label="Download from Google Play"
+                >
+                  <Play size={16} />
+                  Google Play
+                </a>
+              </div>
             </div>
           </div>
 
@@ -75,6 +123,7 @@ const Footer = () => {
                 <li key={link.text}>
                   <Link
                     to={link.url}
+                    onClick={handleLinkClick}
                     className="text-gray-700 hover:text-primary transition-colors text-base font-medium"
                   >
                     {link.text}
@@ -92,6 +141,7 @@ const Footer = () => {
                 <li key={link.text}>
                   <Link
                     to={link.url}
+                    onClick={handleLinkClick}
                     className="text-gray-700 hover:text-primary transition-colors text-base font-medium"
                   >
                     {link.text}
@@ -109,6 +159,7 @@ const Footer = () => {
                 <li key={link.text}>
                   <Link
                     to={link.url}
+                    onClick={handleLinkClick}
                     className="text-gray-700 hover:text-primary transition-colors text-base font-medium"
                   >
                     {link.text}
