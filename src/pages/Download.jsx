@@ -100,7 +100,7 @@ const Download = () => {
       "description": "Free live video chat and dating app for iOS and Android. Download now to start meeting new people through HD video calls.",
       "downloadUrl": "https://chamakz.app/download",
       "softwareVersion": "2.5.0",
-      "screenshot": "https://chamakz.app/images/logo.png"
+      "screenshot": "https://chamakz.app/images/logopink.png"
     })
 
     // Add Breadcrumb Schema

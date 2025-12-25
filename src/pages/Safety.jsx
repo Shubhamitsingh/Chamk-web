@@ -138,7 +138,7 @@ const Safety = () => {
       "@type": "Organization",
       "name": "Chamakz",
       "url": "https://chamakz.app",
-      "logo": "https://chamakz.app/images/logo.png",
+      "logo": "https://chamakz.app/images/logopink.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Support",

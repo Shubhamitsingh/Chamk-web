@@ -110,7 +110,7 @@ const SmartAppBanner = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center shadow-lg">
                     <img 
-                      src="/images/logo.png" 
+                      src="/images/logopink.png" 
                       alt="Chamakz App" 
                       className="w-12 h-12 object-contain rounded-lg"
                       loading="eager"
@@ -185,6 +185,8 @@ const SmartAppBanner = () => {
 }
 
 export default SmartAppBanner
+
+
 
 
 

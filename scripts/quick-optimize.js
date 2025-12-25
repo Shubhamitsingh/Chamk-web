@@ -196,3 +196,5 @@ module.exports = { generateSEOFileName, generateAltText, generateHTML }
 
 
 
+
+

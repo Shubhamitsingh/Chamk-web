@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 const SEOHead = ({
   title = "Live Video Chat & Dating App | Chamakz - Meet New People",
   description = "Join Chamakz for live video chat, random calls, and dating. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!",
-  image = "https://chamakz.app/images/logo.png",
+  image = "https://chamakz.app/images/logopink.png",
   keywords = "live video chat, random video call, meet new people, dating app, video chat online, live streaming, chat with strangers",
   noindex = false,
   canonical = null
@@ -35,7 +35,7 @@ const SEOHead = ({
     updateMetaTag('keywords', keywords)
     updateMetaTag('robots', noindex ? 'noindex, nofollow' : 'index, follow')
     updateMetaTag('author', 'Chamakz')
-    updateMetaTag('theme-color', '#FF1493')
+    updateMetaTag('theme-color', '#FF1B7C')
 
     // Open Graph Tags
     updateMetaTag('og:type', 'website', true)
@@ -77,7 +77,7 @@ const SEOHead = ({
       "@type": "Organization",
       "name": "Chamakz",
       "url": "https://chamakz.app",
-      "logo": "https://chamakz.app/images/logo.png",
+      "logo": "https://chamakz.app/images/logopink.png",
       "sameAs": [
         "https://facebook.com/chamakz",
         "https://twitter.com/chamakz",

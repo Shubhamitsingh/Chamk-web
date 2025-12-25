@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="space-y-3">
             <div className="flex items-center space-x-1.5">
               <img 
-                src="/images/logo.png" 
+                src="/images/logopink.png" 
                 alt="Chamakz live video chat and dating app logo" 
                 className="h-14 w-14 object-contain"
                 loading="lazy"

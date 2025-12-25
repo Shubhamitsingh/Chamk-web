@@ -100,9 +100,7 @@ chamak-web/
 
 ### Colors
 
-- **Primary**: #FF1493 (Hot Pink)
-- **Secondary**: #9C27B0 (Purple)
-- **Accent**: #FF9800 (Orange)
+- **Primary**: #FF1B7C (Pink/Magenta)
 
 ### Typography
 

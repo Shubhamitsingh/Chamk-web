@@ -19,7 +19,7 @@ const Home = () => {
       title: 'Live Video Chat & Dating Platform',
       subtitle: 'Meet new people worldwide through live video chat and random video calls. Experience HD video quality and safe connections with strangers.',
       emoji: '✨',
-      bgColor: '#9C27B0',
+      bgColor: '#FF1B7C',
     },
   ]
 
@@ -112,7 +112,7 @@ const Home = () => {
       <SEOHead
         title="Live Video Chat & Dating App | Chamakz - Meet New People"
         description="Join Chamakz for live video chat, random calls, and dating. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!"
-        image="/images/logo.png"
+        image="/images/logopink.png"
         keywords="live video chat, random video call, meet new people, dating app, video chat online, live streaming, chat with strangers"
       />
       {/* Hero Section with Slider */}
@@ -332,6 +332,7 @@ const Home = () => {
                 ))}
               </div>
             </motion.div>
+
           </div>
 
           {/* Slider Dots - Hidden since we only have one slide */}
@@ -509,7 +510,7 @@ const Home = () => {
                   trackAppInstall('home-cta-android', detectDevice())
                   openAppOrStore(deepLink, fallback)
                 }}
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1493] text-white rounded-lg font-semibold hover:bg-[#E6007A] transition-all duration-300 shadow-lg"
+                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1B7C] text-white rounded-lg font-semibold hover:bg-[#E6176D] transition-all duration-300 shadow-lg"
               >
                 <Play size={20} />
                 Download from Google Play Store
@@ -521,7 +522,7 @@ const Home = () => {
                   trackAppInstall('home-cta-ios', detectDevice())
                   openAppOrStore(deepLink, fallback)
                 }}
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1493] text-white rounded-lg font-semibold hover:bg-[#E6007A] transition-all duration-300 shadow-lg"
+                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1B7C] text-white rounded-lg font-semibold hover:bg-[#E6176D] transition-all duration-300 shadow-lg"
               >
                 <Apple size={20} />
                 Download from Apple App Store
