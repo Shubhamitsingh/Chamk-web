@@ -153,10 +153,16 @@ const Home = () => {
                 <div className="flex flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-5 justify-center lg:justify-start w-full max-w-[340px] sm:max-w-none mx-auto lg:mx-0">
                   <button
                     onClick={() => {
-                      const deepLink = getDeepLinkUrl('open')
-                      const fallback = getAppStoreUrl()
+                      const storeUrl = getAppStoreUrl()
                       trackAppInstall('hero-android', detectDevice())
-                      openAppOrStore(deepLink, fallback)
+                      // Directly open Play Store
+                      if (detectDevice() === 'android') {
+                        window.open(storeUrl, '_blank')
+                      } else {
+                        // For non-Android, try deep link then fallback
+                        const deepLink = getDeepLinkUrl('open')
+                        openAppOrStore(deepLink, storeUrl)
+                      }
                     }}
                     className="flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2.5 text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-5 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white text-primary border-2 border-white rounded-lg sm:rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg flex-1 sm:flex-none sm:w-auto max-w-[150px] sm:max-w-none"
                   >
@@ -505,10 +511,16 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => {
-                  const deepLink = getDeepLinkUrl('open')
-                  const fallback = getAppStoreUrl()
+                  const storeUrl = getAppStoreUrl()
                   trackAppInstall('home-cta-android', detectDevice())
-                  openAppOrStore(deepLink, fallback)
+                  // Directly open Play Store
+                  if (detectDevice() === 'android') {
+                    window.open(storeUrl, '_blank')
+                  } else {
+                    // For non-Android, try deep link then fallback
+                    const deepLink = getDeepLinkUrl('open')
+                    openAppOrStore(deepLink, storeUrl)
+                  }
                 }}
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-[#FF1B7C] text-white rounded-lg font-semibold hover:bg-[#E6176D] transition-all duration-300 shadow-lg"
               >

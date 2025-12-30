@@ -75,7 +75,7 @@ const SmartAppBanner = () => {
     if (deviceType === 'ios') {
       return 'https://apps.apple.com/app/chamakz/idYOUR_APP_ID' // Replace with actual App Store ID
     } else if (deviceType === 'android') {
-      return 'https://play.google.com/store/apps/details?id=com.chamakz.app' // Replace with actual package name
+      return 'https://play.google.com/store/apps/details?id=com.chamakz.app&pcampaignid=web_share'
     }
     return '/download'
   }

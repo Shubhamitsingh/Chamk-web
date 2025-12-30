@@ -67,7 +67,7 @@ export const getAppStoreUrl = () => {
   if (device === 'ios') {
     return 'https://apps.apple.com/app/chamakz/idYOUR_APP_ID' // Replace with actual App Store ID
   } else if (device === 'android') {
-    return 'https://play.google.com/store/apps/details?id=com.chamakz.app' // Replace with actual package name
+    return 'https://play.google.com/store/apps/details?id=com.chamakz.app&pcampaignid=web_share'
   }
   
   return '/download'
@@ -80,24 +80,44 @@ export const getAppStoreUrl = () => {
  */
 export const openAppOrStore = (deepLink, fallbackUrl) => {
   const device = detectDevice()
+  const storeUrl = fallbackUrl || getAppStoreUrl()
   
+  // If no deep link, go directly to store
   if (!deepLink) {
-    window.location.href = fallbackUrl || getAppStoreUrl()
+    window.open(storeUrl, '_blank')
     return
   }
   
-  // Try to open app
-  const startTime = Date.now()
-  window.location.href = deepLink
-  
-  // Fallback detection (if app doesn't open, redirect to store)
-  setTimeout(() => {
-    const endTime = Date.now()
-    // If page is still visible after 2.5 seconds, app likely didn't open
-    if (endTime - startTime < 2500) {
-      window.location.href = fallbackUrl || getAppStoreUrl()
-    }
-  }, 2500)
+  // For Android, try intent first, then fallback to Play Store
+  if (device === 'android') {
+    // Try to open app via intent
+    const startTime = Date.now()
+    window.location.href = deepLink
+    
+    // Fallback: if app doesn't open within 1 second, redirect to Play Store
+    setTimeout(() => {
+      const elapsed = Date.now() - startTime
+      // If less than 1 second passed, the page is still here (app didn't open)
+      if (elapsed < 1000) {
+        window.location.href = storeUrl
+      }
+    }, 1000)
+  } else if (device === 'ios') {
+    // For iOS, try deep link first
+    const startTime = Date.now()
+    window.location.href = deepLink
+    
+    // Fallback: redirect to App Store if app doesn't open
+    setTimeout(() => {
+      const elapsed = Date.now() - startTime
+      if (elapsed < 1000) {
+        window.location.href = storeUrl
+      }
+    }, 1000)
+  } else {
+    // Desktop or other - go directly to store
+    window.open(storeUrl, '_blank')
+  }
 }
 
 /**

@@ -99,10 +99,8 @@ const Footer = () => {
                   <Apple size={16} />
                   App Store
                 </a>
-                {/* TODO: Replace with actual Google Play Store URL when available */}
-                {/* Example: href="https://play.google.com/store/apps/details?id=com.chamakz.app" */}
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.chamakz.app"
+                  href="https://play.google.com/store/apps/details?id=com.chamakz.app&pcampaignid=web_share"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#0175C2] text-white rounded-lg hover:bg-[#0165A3] transition-colors text-sm font-medium"

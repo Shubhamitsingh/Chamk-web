@@ -234,10 +234,16 @@ const Download = () => {
               </button>
               <button
                 onClick={() => {
-                  const deepLink = getDeepLinkUrl('open')
-                  const fallback = getAppStoreUrl()
+                  const storeUrl = getAppStoreUrl()
                   trackAppInstall('hero-android', detectDevice())
-                  openAppOrStore(deepLink, fallback)
+                  // Directly open Play Store
+                  if (detectDevice() === 'android') {
+                    window.open(storeUrl, '_blank')
+                  } else {
+                    // For non-Android, try deep link then fallback
+                    const deepLink = getDeepLinkUrl('open')
+                    openAppOrStore(deepLink, storeUrl)
+                  }
                 }}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-[#0175C2] text-white rounded-xl font-semibold hover:bg-[#0165A3] transition-all duration-300 shadow-lg hover:shadow-xl text-lg min-w-[280px] sm:min-w-[300px]"
                 aria-label="Download Chamakz from Google Play Store"
@@ -416,10 +422,16 @@ const Download = () => {
               <h2 className="text-3xl font-heading font-bold">Download for Android</h2>
               <button
                 onClick={() => {
-                  const deepLink = getDeepLinkUrl('open')
-                  const fallback = getAppStoreUrl()
+                  const storeUrl = getAppStoreUrl()
                   trackAppInstall('download-android', detectDevice())
-                  openAppOrStore(deepLink, fallback)
+                  // Directly open Play Store
+                  if (detectDevice() === 'android') {
+                    window.open(storeUrl, '_blank')
+                  } else {
+                    // For non-Android, try deep link then fallback
+                    const deepLink = getDeepLinkUrl('open')
+                    openAppOrStore(deepLink, storeUrl)
+                  }
                 }}
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0175C2] text-white rounded-xl font-semibold hover:bg-[#0165A3] transition-all duration-300 shadow-lg hover:shadow-xl text-lg w-full"
                 aria-label="Download Chamakz Android app from Google Play"
@@ -578,10 +590,16 @@ const Download = () => {
               </button>
               <button
                 onClick={() => {
-                  const deepLink = getDeepLinkUrl('open')
-                  const fallback = getAppStoreUrl()
+                  const storeUrl = getAppStoreUrl()
                   trackAppInstall('cta-android', detectDevice())
-                  openAppOrStore(deepLink, fallback)
+                  // Directly open Play Store
+                  if (detectDevice() === 'android') {
+                    window.open(storeUrl, '_blank')
+                  } else {
+                    // For non-Android, try deep link then fallback
+                    const deepLink = getDeepLinkUrl('open')
+                    openAppOrStore(deepLink, storeUrl)
+                  }
                 }}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
               >
