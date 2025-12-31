@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Download as DownloadIcon, Smartphone, Check, Play, Apple, Star, Shield, Globe, Video } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { openAppOrStore, getDeepLinkUrl, getAppStoreUrl, trackAppInstall, detectDevice } from '../utils/mobileDetection'
+import { openAppOrStore, getDeepLinkUrl, getAppStoreUrl, getPlayStoreUrl, trackAppInstall, detectDevice } from '../utils/mobileDetection'
 
 const Download = () => {
   // Ensure page scrolls to top when component mounts
@@ -234,15 +234,13 @@ const Download = () => {
               </button>
               <button
                 onClick={() => {
-                  const storeUrl = getAppStoreUrl()
+                  const playStoreUrl = getPlayStoreUrl()
                   trackAppInstall('hero-android', detectDevice())
-                  // Directly open Play Store
-                  if (detectDevice() === 'android') {
-                    window.open(storeUrl, '_blank')
-                  } else {
-                    // For non-Android, try deep link then fallback
-                    const deepLink = getDeepLinkUrl('open')
-                    openAppOrStore(deepLink, storeUrl)
+                  // Always open Play Store directly
+                  const newWindow = window.open(playStoreUrl, '_blank')
+                  // Fallback if popup blocked
+                  if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                    window.location.href = playStoreUrl
                   }
                 }}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-[#0175C2] text-white rounded-xl font-semibold hover:bg-[#0165A3] transition-all duration-300 shadow-lg hover:shadow-xl text-lg min-w-[280px] sm:min-w-[300px]"
@@ -422,15 +420,13 @@ const Download = () => {
               <h2 className="text-3xl font-heading font-bold">Download for Android</h2>
               <button
                 onClick={() => {
-                  const storeUrl = getAppStoreUrl()
+                  const playStoreUrl = getPlayStoreUrl()
                   trackAppInstall('download-android', detectDevice())
-                  // Directly open Play Store
-                  if (detectDevice() === 'android') {
-                    window.open(storeUrl, '_blank')
-                  } else {
-                    // For non-Android, try deep link then fallback
-                    const deepLink = getDeepLinkUrl('open')
-                    openAppOrStore(deepLink, storeUrl)
+                  // Always open Play Store directly
+                  const newWindow = window.open(playStoreUrl, '_blank')
+                  // Fallback if popup blocked
+                  if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                    window.location.href = playStoreUrl
                   }
                 }}
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0175C2] text-white rounded-xl font-semibold hover:bg-[#0165A3] transition-all duration-300 shadow-lg hover:shadow-xl text-lg w-full"
@@ -590,15 +586,13 @@ const Download = () => {
               </button>
               <button
                 onClick={() => {
-                  const storeUrl = getAppStoreUrl()
+                  const playStoreUrl = getPlayStoreUrl()
                   trackAppInstall('cta-android', detectDevice())
-                  // Directly open Play Store
-                  if (detectDevice() === 'android') {
-                    window.open(storeUrl, '_blank')
-                  } else {
-                    // For non-Android, try deep link then fallback
-                    const deepLink = getDeepLinkUrl('open')
-                    openAppOrStore(deepLink, storeUrl)
+                  // Always open Play Store directly
+                  const newWindow = window.open(playStoreUrl, '_blank')
+                  // Fallback if popup blocked
+                  if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                    window.location.href = playStoreUrl
                   }
                 }}
                 className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-lg"

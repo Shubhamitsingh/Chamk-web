@@ -58,8 +58,16 @@ export const getDeepLinkUrl = (path = '') => {
 }
 
 /**
- * Get app store URL
- * @returns {string} App store URL
+ * Get Play Store URL (always returns Play Store URL)
+ * @returns {string} Play Store URL
+ */
+export const getPlayStoreUrl = () => {
+  return 'https://play.google.com/store/apps/details?id=com.chamakz.app&pcampaignid=web_share'
+}
+
+/**
+ * Get App Store URL (for iOS)
+ * @returns {string} App Store URL
  */
 export const getAppStoreUrl = () => {
   const device = detectDevice()

@@ -80,6 +80,10 @@ const SmartAppBanner = () => {
     return '/download'
   }
 
+  const getPlayStoreUrl = () => {
+    return 'https://play.google.com/store/apps/details?id=com.chamakz.app&pcampaignid=web_share'
+  }
+
   const getDeepLinkUrl = () => {
     if (deviceType === 'ios') {
       return 'chamakz://open' // iOS URL scheme
@@ -144,7 +148,7 @@ const SmartAppBanner = () => {
                       </a>
                     ) : deviceType === 'android' ? (
                       <a
-                        href={getAppStoreUrl()}
+                        href={getPlayStoreUrl()}
                         onClick={() => handleInstallClick('android')}
                         className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#0175C2] text-white rounded-lg text-xs font-semibold hover:bg-[#0165A3] transition-colors"
                         target="_blank"
