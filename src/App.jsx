@@ -15,6 +15,8 @@ import Guidelines from './pages/Guidelines'
 import Safety from './pages/Safety'
 import HowItWorks from './pages/HowItWorks'
 import Careers from './pages/Careers'
+import PaymentSuccess from './pages/PaymentSuccess'
+import PaymentCancel from './pages/PaymentCancel'
 
 function App() {
   // Disable browser scroll restoration globally
@@ -43,6 +45,8 @@ function App() {
             <Route path="/community-guidelines" element={<Safety />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/payment/success" element={<PaymentSuccess />} />
+            <Route path="/payment/cancel" element={<PaymentCancel />} />
           </Routes>
         </main>
         <Footer />
