@@ -21,7 +21,7 @@ const Home = () => {
       title: 'Live Video Chat & Dating Platform',
       subtitle: 'Meet new people worldwide through live video chat and random video calls. Experience HD video quality and safe connections with strangers.',
       emoji: '✨',
-      bgColor: '#FF1B7C',
+      bgColor: '#FFFFFF',
     },
   ]
 
@@ -118,19 +118,7 @@ const Home = () => {
         keywords="live video chat, random video call, meet new people, dating app, video chat online, live streaming, chat with strangers"
       />
       {/* Hero Section with Slider */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12 md:pb-20">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0"
-            style={{ backgroundColor: heroSlides[currentSlide].bgColor }}
-          />
-        </AnimatePresence>
-        
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12 md:pb-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             {/* Left Column - Slider Content */}
@@ -143,16 +131,16 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="space-y-5 sm:space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1 max-w-full"
               >
-                <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-medium">
                   Welcome to Chamakz
                 </p>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-gray-900 leading-tight">
                   Live Video Chat & Global Friend Discovery{' '}
-                  <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-white">
+                  <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-primary-700">
                     {heroSlides[currentSlide].emoji}
                   </span>
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed px-2 sm:px-0">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed px-2 sm:px-0">
                   Connect with people from around the world through real-time video, chat, and translation tools.
                 </p>
                 <div className="flex flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-5 justify-center lg:justify-start w-full max-w-[340px] sm:max-w-none mx-auto lg:mx-0">
@@ -167,7 +155,7 @@ const Home = () => {
                         window.location.href = playStoreUrl
                       }
                     }}
-                    className="flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2.5 text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-5 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white text-primary border-2 border-white rounded-lg sm:rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg flex-1 sm:flex-none sm:w-auto max-w-[150px] sm:max-w-none"
+                    className="flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2.5 text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-5 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gradient-primary text-white border-2 border-primary rounded-lg sm:rounded-xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg flex-1 sm:flex-none sm:w-auto max-w-[150px] sm:max-w-none"
                   >
                     <Play size={14} className="sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
                     <span className="hidden lg:inline">Download on </span>Play Store
@@ -179,7 +167,7 @@ const Home = () => {
                       trackAppInstall('hero-ios', detectDevice())
                       openAppOrStore(deepLink, fallback)
                     }}
-                    className="flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2.5 text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-5 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white text-primary border-2 border-white rounded-lg sm:rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg flex-1 sm:flex-none sm:w-auto max-w-[150px] sm:max-w-none"
+                    className="flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2 lg:gap-2.5 text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-5 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gradient-primary text-white border-2 border-primary rounded-lg sm:rounded-xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg flex-1 sm:flex-none sm:w-auto max-w-[150px] sm:max-w-none"
                   >
                     <Apple size={14} className="sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
                     <span className="hidden lg:inline">Download on </span>App Store
@@ -192,7 +180,7 @@ const Home = () => {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.5 + idx * 0.1 }}
-                      className="px-3 sm:px-3.5 py-1.5 sm:py-2 bg-white/30 backdrop-blur-md rounded-lg text-white text-xs sm:text-sm font-semibold shadow-lg"
+                      className="px-3 sm:px-3.5 py-1.5 sm:py-2 bg-gradient-primary/10 backdrop-blur-md rounded-lg text-primary border border-primary/20 text-xs sm:text-sm font-semibold shadow-md"
                     >
                       {badge}
                     </motion.div>
@@ -260,7 +248,7 @@ const Home = () => {
                       <span className="text-white text-[10px] sm:text-xs font-medium">👁️ <span className="hidden sm:inline">1.2K</span><span className="sm:hidden">1.2K</span></span>
                     </div>
                     
-                    {/* Bottom UI Elements (like Tango) */}
+                    {/* Bottom UI Elements */}
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-2 sm:p-3 md:p-4">
                       <div className="flex items-center justify-between mb-1 sm:mb-2">
                         <div className="flex items-center gap-1.5 sm:gap-2">
@@ -314,7 +302,7 @@ const Home = () => {
                   </div>
                 </div>
                 
-                {/* Floating Elements Around Phone - Hidden on mobile, visible on larger screens */}
+                {/* Floating Elements Around Phone */}
                 {[
                   { emoji: '💝', position: 'top-10 -right-6 sm:-right-8 md:-right-10', size: 'text-2xl sm:text-3xl md:text-4xl' },
                   { emoji: '❤️', position: 'top-1/2 -right-3 sm:-right-4 md:-right-5', size: 'text-3xl sm:text-4xl md:text-5xl' },
