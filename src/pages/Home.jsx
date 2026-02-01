@@ -8,6 +8,8 @@ import Button from '../components/Button'
 import StatCounter from '../components/StatCounter'
 import SEOHead from '../components/SEOHead'
 import Breadcrumbs from '../components/Breadcrumbs'
+import TrustSection from '../components/TrustSection'
+import FAQ from '../components/FAQ'
 import { Link } from 'react-router-dom'
 import { openAppOrStore, getDeepLinkUrl, getAppStoreUrl, getPlayStoreUrl, trackAppInstall, detectDevice } from '../utils/mobileDetection'
 
@@ -141,14 +143,17 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="space-y-5 sm:space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1 max-w-full"
               >
+                <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium">
+                  Welcome to Chamakz
+                </p>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight">
-                  {heroSlides[currentSlide].title}{' '}
+                  Live Video Chat & Global Friend Discovery{' '}
                   <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-white">
                     {heroSlides[currentSlide].emoji}
                   </span>
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed px-2 sm:px-0">
-                  {heroSlides[currentSlide].subtitle}
+                  Connect with people from around the world through real-time video, chat, and translation tools.
                 </p>
                 <div className="flex flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-5 justify-center lg:justify-start w-full max-w-[340px] sm:max-w-none mx-auto lg:mx-0">
                   <button
@@ -342,6 +347,9 @@ const Home = () => {
           {/* Slider Dots - Hidden since we only have one slide */}
         </div>
       </section>
+
+      {/* Trust Section - Why Choose Chamakz */}
+      <TrustSection />
 
       {/* About Chamakz Section - SEO Content */}
       <section className="py-20">
@@ -542,6 +550,9 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
     </div>
   )
 }
