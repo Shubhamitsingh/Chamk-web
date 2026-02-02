@@ -2,10 +2,10 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SEOHead = ({
-  title = "Live Video Chat & Dating App | Chamakz - Meet New People",
-  description = "Join Chamakz for live video chat, random calls, and dating. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!",
+  title = "Chamakz – New Friends Live Chat | Live Video Chat App",
+  description = "Join Chamakz – New Friends Live Chat for live video chat and random calls. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!",
   image = "https://chamakz.app/images/logopink.png",
-  keywords = "live video chat, random video call, meet new people, dating app, video chat online, live streaming, chat with strangers",
+  keywords = "live video chat, random video call, meet new people, new friends live chat, video chat online, live streaming, chat with strangers",
   noindex = false,
   canonical = null
 }) => {

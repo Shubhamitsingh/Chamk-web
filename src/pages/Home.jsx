@@ -18,7 +18,7 @@ const Home = () => {
   
   const heroSlides = [
     {
-      title: 'Live Video Chat & Dating Platform',
+      title: 'Live Video Chat & New Friends Platform',
       subtitle: 'Meet new people worldwide through live video chat and random video calls. Experience HD video quality and safe connections with strangers.',
       emoji: '✨',
       bgColor: '#FFFFFF',
@@ -56,7 +56,7 @@ const Home = () => {
     {
       icon: Globe,
       title: 'Worldwide Connections',
-      description: 'Meet new people from around the globe. Our dating app connects you with users worldwide for meaningful connections.',
+      description: 'Meet new people from around the globe. Connect with users worldwide for meaningful friendships and connections.',
     },
   ]
 
@@ -112,10 +112,10 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Live Video Chat & Dating App | Chamakz - Meet New People"
-        description="Join Chamakz for live video chat, random calls, and dating. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!"
+        title="Chamakz – New Friends Live Chat | Live Video Chat App"
+        description="Join Chamakz – New Friends Live Chat for live video chat and random calls. Meet new people worldwide with HD video quality. Download free now - Chat with strangers safely!"
         image="/images/logopink.png"
-        keywords="live video chat, random video call, meet new people, dating app, video chat online, live streaming, chat with strangers"
+        keywords="live video chat, random video call, meet new people, new friends live chat, video chat online, live streaming, chat with strangers"
       />
       {/* Hero Section with Slider */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12 md:pb-20 bg-white">
@@ -217,7 +217,7 @@ const Home = () => {
                     <div className="absolute inset-0">
                       <img 
                         src="/images/portrait-girl.png" 
-                        alt="People using Chamakz live video chat app for random video calls and dating"
+                        alt="People using Chamakz – New Friends Live Chat app for random video calls"
                         className="w-full h-full object-cover"
                         loading="lazy"
                         onError={(e) => {
@@ -354,13 +354,13 @@ const Home = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                Chamakz is the ultimate <strong>live video chat</strong> and <strong>dating app</strong> that connects you with people from around the world. Whether you're looking for meaningful connections, casual conversations, or romantic relationships, our platform offers a safe and exciting way to <strong>meet new people</strong> through <strong>random video calls</strong> and <strong>video chat online</strong>.
+                Chamakz – New Friends Live Chat is the ultimate <strong>live video chat</strong> platform that connects you with people from around the world. Whether you're looking for meaningful connections, casual conversations, or new friendships, our platform offers a safe and exciting way to <strong>meet new people</strong> through <strong>random video calls</strong> and <strong>video chat online</strong>.
               </p>
               <p>
                 Experience crystal-clear <strong>HD live streaming</strong> that makes every conversation feel personal and real. Our advanced technology ensures smooth video calls, minimal lag, and high-definition picture quality, so you can focus on building connections rather than technical issues. With Chamakz, you can <strong>chat with strangers</strong> safely in a moderated environment designed for your security and comfort.
               </p>
               <p>
-                Our platform features include <strong>random video chat</strong> for spontaneous connections, <strong>group video rooms</strong> to meet multiple people at once, and <strong>real-time translation</strong> to break down language barriers. Whether you're interested in <strong>live streaming</strong> your talents, one-on-one <strong>video chat online</strong>, or exploring our <strong>dating app</strong> features, Chamakz gives you all the tools you need to connect authentically. Safety is our top priority — we use AI-powered moderation and human review, with strict community guidelines and reporting tools so you can <strong>chat with strangers</strong> confidently in a safe and respectful environment.
+                Our platform features include <strong>random video chat</strong> for spontaneous connections, <strong>group video rooms</strong> to meet multiple people at once, and <strong>real-time translation</strong> to break down language barriers. Whether you're interested in <strong>live streaming</strong> your talents, one-on-one <strong>video chat online</strong>, or exploring our <strong>new friends</strong> features, Chamakz – New Friends Live Chat gives you all the tools you need to connect authentically. Safety is our top priority — we use AI-powered moderation and human review, with strict community guidelines and reporting tools so you can <strong>chat with strangers</strong> confidently in a safe and respectful environment.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-4 pt-4">

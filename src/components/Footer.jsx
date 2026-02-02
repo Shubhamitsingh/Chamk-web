@@ -43,11 +43,11 @@ const Footer = () => {
             <div className="flex items-center space-x-1.5">
               <img 
                 src="/images/logopink.png" 
-                alt="Chamakz live video chat and dating app logo" 
+                alt="Chamakz – New Friends Live Chat logo" 
                 className="h-14 w-14 object-contain"
                 loading="lazy"
               />
-              <span className="text-2xl font-heading font-bold text-gray-900">Chamakz</span>
+              <span className="text-2xl font-heading font-bold text-gray-900">Chamakz – New Friends Live Chat</span>
             </div>
             <p className="text-gray-700 text-base font-medium">
               The most exciting livestreaming platform. Connect, perform, earn and build your fanbase.
@@ -171,7 +171,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-700 text-base font-medium">
-            Copyright © 2024 Chamakz. All rights reserved.
+            Copyright © 2024 Chamakz – New Friends Live Chat. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             <select className="text-gray-800 text-base px-3 py-1.5 rounded border border-gray-400 font-medium">

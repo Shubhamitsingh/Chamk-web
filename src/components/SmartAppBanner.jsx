@@ -115,7 +115,7 @@ const SmartAppBanner = () => {
                   <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center shadow-lg">
                     <img 
                       src="/images/logopink.png" 
-                      alt="Chamakz App" 
+                      alt="Chamakz – New Friends Live Chat" 
                       className="w-12 h-12 object-contain rounded-lg"
                       loading="eager"
                     />
@@ -125,7 +125,7 @@ const SmartAppBanner = () => {
                 {/* Content */}
                 <div className="flex-1 min-w-0">
                   <h3 className="font-heading font-bold text-gray-900 text-sm leading-tight">
-                    Get the Chamakz App
+                    Get Chamakz – New Friends Live Chat
                   </h3>
                   <p className="text-xs text-gray-600 mt-0.5">
                     {deviceType === 'ios' 

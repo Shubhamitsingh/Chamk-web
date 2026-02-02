@@ -44,12 +44,12 @@ const Header = () => {
             <Link to="/" className="flex items-center space-x-1.5">
               <img 
                 src="/images/logopink.png" 
-                alt="Chamakz live video chat and dating app logo" 
+                alt="Chamakz – New Friends Live Chat logo" 
                 className="h-14 w-14 object-contain"
                 loading="eager"
               />
               <span className="text-2xl font-heading font-bold text-gradient">
-                Chamakz
+                Chamakz – New Friends Live Chat
               </span>
             </Link>
 

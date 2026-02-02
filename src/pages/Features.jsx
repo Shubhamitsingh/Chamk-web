@@ -67,7 +67,7 @@ const Features = () => {
   // Add Schema Markup and Meta Tags
   useEffect(() => {
     // Update document title
-    document.title = "Features - Live Video Chat, Dating & Streaming | Chamakz"
+    document.title = "Features - Live Video Chat & Streaming | Chamakz – New Friends Live Chat"
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]')
@@ -76,7 +76,7 @@ const Features = () => {
       metaDescription.setAttribute('name', 'description')
       document.head.appendChild(metaDescription)
     }
-    metaDescription.setAttribute('content', 'Explore Chamakz features: HD video calls, random chat, group rooms, real-time translation, safe dating, and live streaming. Join millions worldwide!')
+    metaDescription.setAttribute('content', 'Explore Chamakz – New Friends Live Chat features: HD video calls, random chat, group rooms, real-time translation, and live streaming. Join millions worldwide!')
 
     // Add ItemList Schema for Features
     const itemListSchema = document.createElement('script')
@@ -86,7 +86,7 @@ const Features = () => {
       "@context": "https://schema.org",
       "@type": "ItemList",
       "name": "Chamakz Features",
-      "description": "Complete list of features for Chamakz live video chat and dating platform",
+      "description": "Complete list of features for Chamakz – New Friends Live Chat platform",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -183,7 +183,7 @@ const Features = () => {
     {
       id: 1,
       title: '1-on-1 Video Calls',
-      description: 'Experience crystal-clear <strong>HD video quality</strong> with our advanced <strong>video call features</strong>. Connect privately with friends, family, or new connections through secure one-on-one conversations. Our platform ensures minimal latency and excellent audio quality, making every conversation feel natural and personal. Perfect for <strong>dating app features</strong> where meaningful connections matter.',
+      description: 'Experience crystal-clear <strong>HD video quality</strong> with our advanced <strong>video call features</strong>. Connect privately with friends, family, or new connections through secure one-on-one conversations. Our platform ensures minimal latency and excellent audio quality, making every conversation feel natural and personal. Perfect for <strong>making new friends</strong> where meaningful connections matter.',
       icon: Video,
       benefits: ['HD video quality', 'Low latency', 'Private conversations', 'Crystal-clear audio']
     },
@@ -218,7 +218,7 @@ const Features = () => {
     {
       id: 6,
       title: 'Safe & Secure Platform',
-      description: 'Your safety is our top priority. Our <strong>safe video chat</strong> platform uses AI-powered moderation, content filtering, and reporting tools to ensure a secure environment for everyone. We maintain strict community guidelines and provide 24/7 support to address any concerns. Experience <strong>dating app features</strong> with peace of mind, knowing you\'re protected by advanced security measures.',
+      description: 'Your safety is our top priority. Our <strong>safe video chat</strong> platform uses AI-powered moderation, content filtering, and reporting tools to ensure a secure environment for everyone. We maintain strict community guidelines and provide 24/7 support to address any concerns. Experience <strong>new friends features</strong> with peace of mind, knowing you\'re protected by advanced security measures.',
       icon: Shield,
       benefits: ['AI moderation', 'Content filtering', '24/7 support', 'Privacy protection']
     },
@@ -232,7 +232,7 @@ const Features = () => {
     {
       id: 8,
       title: 'Virtual Gifts & Rewards',
-      description: 'Express yourself and show appreciation with our <strong>virtual gifts</strong> system. Send animated gifts, emojis, and special effects during video calls and streams. Creators can monetize their content by receiving gifts from viewers, which can be converted to real earnings. Our <strong>dating app features</strong> include gift exchanges that make connections more meaningful and fun.',
+      description: 'Express yourself and show appreciation with our <strong>virtual gifts</strong> system. Send animated gifts, emojis, and special effects during video calls and streams. Creators can monetize their content by receiving gifts from viewers, which can be converted to real earnings. Our <strong>new friends features</strong> include gift exchanges that make connections more meaningful and fun.',
       icon: Gift,
       benefits: ['Animated gifts', 'Monetization', 'Special effects', 'Gift collections']
     }
@@ -258,11 +258,11 @@ const Features = () => {
             className="text-center max-w-4xl mx-auto space-y-6"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-gradient mb-4">
-              Powerful Features for Live Video Chat & Dating
+              Powerful Features for Live Video Chat & New Friends
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
               Discover comprehensive <strong>video call features</strong>, <strong>live streaming features</strong>, 
-              and <strong>dating app features</strong> designed to connect you with people worldwide. Experience 
+              and <strong>new friends features</strong> designed to connect you with people worldwide. Experience 
               <strong>HD video quality</strong>, <strong>safe video chat</strong>, and <strong>real-time translation</strong> 
               in one powerful platform.
             </p>
@@ -284,8 +284,8 @@ const Features = () => {
             <p className="text-gray-700 leading-relaxed mb-4">
               Our <strong>real-time translation</strong> feature breaks down language barriers, allowing you to connect with 
               people from any country seamlessly. This powerful <strong>video call feature</strong> supports over 50 languages, 
-              making it easy to have natural conversations regardless of your native tongue. Combined with our <strong>dating app features</strong>, 
-              you can build meaningful relationships with people from diverse cultural backgrounds.
+              making it easy to have natural conversations regardless of your native tongue. Combined with our <strong>new friends features</strong>, 
+              you can build meaningful friendships with people from diverse cultural backgrounds.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               The <strong>group video chat</strong> functionality allows you to create or join rooms with up to 50 participants, 
@@ -296,7 +296,7 @@ const Features = () => {
             </p>
             <p className="text-gray-700 leading-relaxed">
               Safety is paramount in our <strong>safe video chat</strong> environment. We use advanced AI moderation, content 
-              filtering, and user reporting systems to maintain a positive community. Our <strong>dating app features</strong> 
+              filtering, and user reporting systems to maintain a positive community. Our <strong>new friends features</strong> 
               include verified profiles, privacy controls, and secure messaging, ensuring that every interaction is safe and 
               respectful. Experience the best <strong>video call features</strong> and <strong>live streaming features</strong> 
               with the confidence that comes from comprehensive security measures.

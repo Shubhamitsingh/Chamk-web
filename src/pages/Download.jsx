@@ -64,7 +64,7 @@ const Download = () => {
   // Add Schema Markup and Meta Tags
   useEffect(() => {
     // Update document title
-    document.title = "Download Chamakz - Free Video Chat & Dating App | iOS & Android"
+    document.title = "Download Chamakz – New Friends Live Chat | iOS & Android"
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]')
@@ -97,7 +97,7 @@ const Download = () => {
         "bestRating": "5",
         "worstRating": "1"
       },
-      "description": "Free live video chat and dating app for iOS and Android. Download now to start meeting new people through HD video calls.",
+      "description": "Free live video chat app for iOS and Android. Download Chamakz – New Friends Live Chat now to start meeting new people through HD video calls.",
       "downloadUrl": "https://chamakz.app/download",
       "softwareVersion": "2.5.0",
       "screenshot": "https://chamakz.app/images/logopink.png"
@@ -167,7 +167,7 @@ const Download = () => {
   const appScreenshots = [
     { alt: "Chamakz live video chat interface showing HD video call", title: "HD Video Chat" },
     { alt: "Random video call feature in Chamakz mobile app", title: "Random Calls" },
-    { alt: "Group video rooms feature on Chamakz dating app", title: "Group Rooms" },
+    { alt: "Group video rooms feature on Chamakz – New Friends Live Chat app", title: "Group Rooms" },
     { alt: "User profile and matching features in Chamakz app", title: "User Profiles" },
     { alt: "Chat and messaging interface in Chamakz video chat app", title: "Live Chat" },
     { alt: "Safety and privacy settings in Chamakz mobile app", title: "Safety Features" }
@@ -264,7 +264,7 @@ const Download = () => {
             <p className="text-gray-700 leading-relaxed mb-4">
               Looking for the best <strong>free video chat app</strong> to <strong>meet new people</strong>? 
               <strong>Download Chamakz</strong> - the ultimate <strong>mobile app download</strong> for 
-              <strong>live video chat</strong> and dating. Our <strong>free video chat app</strong> is 
+              <strong>live video chat</strong> app. Our <strong>free video chat app</strong> is 
               available for both <strong>iOS Android</strong> devices, making it easy to connect with 
               people from around the world through <strong>HD video calls</strong> and <strong>random video chat</strong>.
             </p>
