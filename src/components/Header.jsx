@@ -41,15 +41,15 @@ const Header = () => {
           {/* Left Side - Logo and Navigation */}
           <div className="flex items-center space-x-4 lg:space-x-6">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-1.5">
+            <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="/images/logopink.png" 
-                alt="Chamakz – New Friends Live Chat logo" 
+                alt="Chamakz logo" 
                 className="h-14 w-14 object-contain"
                 loading="eager"
               />
               <span className="text-2xl font-heading font-bold text-gradient">
-                Chamakz – New Friends Live Chat
+                Chamakz
               </span>
             </Link>
 

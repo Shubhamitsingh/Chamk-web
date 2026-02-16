@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Facebook, Instagram, Twitter } from 'lucide-react'
+import { Mail, MapPin, Send, Facebook, Instagram, Twitter } from 'lucide-react'
 import Button from '../components/Button'
 
 const Contact = () => {
@@ -186,18 +186,6 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <a href="mailto:info@chamakz.app" className="text-primary hover:underline">
                       info@chamakz.app
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+918073034745" className="text-gray-700 hover:text-primary">
-                      +91 80730 34745
                     </a>
                   </div>
                 </div>

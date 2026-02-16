@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Users, Target, Award, Heart } from 'lucide-react'
+import SEOHead from '../components/SEOHead'
 
 const About = () => {
   // Ensure page scrolls to top when component mounts
@@ -84,6 +85,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEOHead
+        title="About Us | Chamakz – New Friends Live Chat"
+        description="Learn about Chamakz – New Friends Live Chat. Our mission, vision, and values. Discover how we're building the future of live video chat and connecting people worldwide."
+        keywords="about Chamakz, company information, mission, vision, team, live video chat platform"
+      />
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
