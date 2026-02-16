@@ -17,6 +17,7 @@ import HowItWorks from './pages/HowItWorks'
 import Careers from './pages/Careers'
 import PaymentSuccess from './pages/PaymentSuccess'
 import PaymentCancel from './pages/PaymentCancel'
+import NotFound from './pages/NotFound'
 
 function App() {
   // Disable browser scroll restoration globally
@@ -47,6 +48,7 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/payment/success" element={<PaymentSuccess />} />
             <Route path="/payment/cancel" element={<PaymentCancel />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
